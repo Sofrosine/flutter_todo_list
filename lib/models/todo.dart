@@ -13,9 +13,5 @@ class Todo {
     );
   }
 
-  // factory Todo.fromJson(Map<String, dynamic> json) {
-  //   return Todo(title: json["title"], date: json["date"]);
-  // }
-
   factory Todo.fromJson(String source) => Todo.fromMap(json.decode(source));
 }
